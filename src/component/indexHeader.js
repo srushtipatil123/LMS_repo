@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import mainlogo from "../assate/main-logo.jpeg";
+import { Link } from 'react-router-dom';
 
 function indexHeader() {
   return (
@@ -9,23 +10,22 @@ function indexHeader() {
         <nav className="nav">
           <img className="logo" src={mainlogo} alt="log_image" />
           <ul className="nav-links">
-            <li className="nav-item">
-              <a href="#home">Home</a>
+            <li className="nav-item"> <Link to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <a href="#about">All Courses</a>
+            <Link to="/All_courses">All_courses</Link>
             </li>
             <li className="nav-item">
-              <a href="#services">Dashboard</a>
+            <Link to="/Dashboard">Dashboard</Link>
             </li>
             <li className="nav-item">
-              <a href="#contact">Groups</a>
+            <Link to="/Contact">Contact us</Link>
             </li>
             <li className="nav-item">
-              <a href="#contact">Login</a>
+            <Link to="/Login">Login</Link>
             </li>
             <li className="nav-item">
-              <a href="#contact">Register</a>
+            <Link to="/Register">Register</Link>
             </li>
           </ul>
         </nav>
