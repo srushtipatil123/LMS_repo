@@ -1,7 +1,24 @@
 import React from 'react';
+import Footer from '../component/footer';
+import { CardThree } from '../component/card';
 
 function All_courses() {
-  return <h1>All courses Page</h1>;
+  return (
+    <>
+    <div className='flex row flex-wrap'>
+      <CardThree />
+      <CardThree/>
+      <CardThree/>
+      <CardThree/>
+      <CardThree/>
+      <CardThree/>
+      <CardThree/>
+      <CardThree/>
+    </div>
+    
+    <Footer/>
+    </>
+  )
 }
 
 export default All_courses;
